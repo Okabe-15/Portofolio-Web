@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Living software architecture map</title>
+  <desc id="desc">A dark system map with a developer node in the center connected to portfolio modules, projects, and technology nodes.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#102b38"/>
+      <stop offset="0.55" stop-color="#091821"/>
+      <stop offset="1" stop-color="#061018"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35e7f5" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#338cff" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="activeLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#37f5ae" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#35e7f5" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#76c9d8" stroke-opacity="0.055"/>
+    </pattern>
+    <style>
+      .label { font: 600 14px 'Inter', 'Segoe UI', sans-serif; letter-spacing: 2px; fill: #f4fbff; }
+      .meta { font: 500 10px 'JetBrains Mono', 'IBM Plex Mono', monospace; letter-spacing: 1.5px; fill: #7ea5b6; }
+      .tiny { font: 500 9px 'JetBrains Mono', 'IBM Plex Mono', monospace; letter-spacing: 1px; fill: #5f8092; }
+      .link { fill: none; stroke: url(#line); stroke-width: 1.5; }
+      .link-active { fill: none; stroke: url(#activeLine); stroke-width: 2; stroke-dasharray: 5 12; animation: flow 3.6s linear infinite; }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .pulse-delay { animation-delay: -1.2s; }
+      .pulse-delay-two { animation-delay: -2.2s; }
+      .node { fill: #0b202b; stroke: #2fcfe0; stroke-width: 1.5; }
+      .node:hover { stroke: #37f5ae; }
+      @keyframes flow { to { stroke-dashoffset: -68; } }
+      @keyframes pulse { 0%, 100% { opacity: .35; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.25); } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="20" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1152" height="712" rx="16" fill="url(#grid)"/>
+  <path d="M60 105H280M920 105H1140M60 655H280M920 655H1140" stroke="#35e7f5" stroke-opacity=".22"/>
+  <text x="60" y="78" class="meta">SYSTEM / PORTFOLIO_ARCHITECTURE</text>
+  <text x="1140" y="78" text-anchor="end" class="meta">STATUS: ONLINE</text>
+
+  <g opacity=".45" stroke="#5f8092" stroke-width="1" stroke-dasharray="2 8">
+    <circle cx="600" cy="382" r="208" fill="none"/>
+    <circle cx="600" cy="382" r="310" fill="none"/>
+  </g>
+
+  <g aria-label="connections">
+    <path class="link" d="M600 382L600 145"/>
+    <path class="link-active" d="M600 382L600 145"/>
+    <path class="link" d="M535 388L272 248"/>
+    <path class="link-active" d="M535 388L272 248"/>
+    <path class="link" d="M665 388L928 248"/>
+    <path class="link-active" d="M665 388L928 248"/>
+    <path class="link" d="M534 436L274 570"/>
+    <path class="link-active" d="M534 436L274 570"/>
+    <path class="link" d="M666 436L926 570"/>
+    <path class="link-active" d="M666 436L926 570"/>
+    <path class="link" d="M600 452L600 625"/>
+    <path class="link-active" d="M600 452L600 625"/>
+
+    <circle class="pulse" cx="600" cy="300" r="3" fill="#37f5ae"/>
+    <circle class="pulse pulse-delay" cx="435" cy="335" r="3" fill="#35e7f5"/>
+    <circle class="pulse pulse-delay-two" cx="765" cy="335" r="3" fill="#35e7f5"/>
+    <circle class="pulse pulse-delay" cx="430" cy="490" r="3" fill="#37f5ae"/>
+    <circle class="pulse pulse-delay-two" cx="770" cy="490" r="3" fill="#35e7f5"/>
+  </g>
+
+  <g transform="translate(600 382)">
+    <circle r="92" fill="#35e7f5" opacity=".08" filter="url(#glow)"/>
+    <circle r="72" fill="#0b202b" stroke="#37f5ae" stroke-width="2"/>
+    <circle r="58" fill="none" stroke="#35e7f5" stroke-opacity=".28"/>
+    <circle cx="0" cy="-58" r="3" fill="#37f5ae" filter="url(#softGlow)"/>
+    <circle cx="58" cy="0" r="3" fill="#35e7f5" filter="url(#softGlow)"/>
+    <circle cx="0" cy="58" r="3" fill="#37f5ae" filter="url(#softGlow)"/>
+    <circle cx="-58" cy="0" r="3" fill="#35e7f5" filter="url(#softGlow)"/>
+    <text y="-8" text-anchor="middle" class="label">DEVELOPER</text>
+    <text y="14" text-anchor="middle" class="meta">CORE SERVICE</text>
+    <text y="35" text-anchor="middle" class="tiny">AVAILABLE / BUILDING</text>
+  </g>
+
+  <g transform="translate(600 118)">
+    <circle r="34" fill="#35e7f5" opacity=".1" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-8 0h16M0-8v16" stroke="#35e7f5" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">ABOUT ME</text>
+    <text y="76" text-anchor="middle" class="meta">IDENTITY MODULE</text>
+  </g>
+
+  <g transform="translate(240 230)">
+    <circle r="34" fill="#338cff" opacity=".1" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-10-4h20M-10 4h13" stroke="#338cff" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">API GATEWAY</text>
+    <text y="76" text-anchor="middle" class="meta">SERVICES / ROUTES</text>
+  </g>
+
+  <g transform="translate(960 230)">
+    <circle r="34" fill="#37f5ae" opacity=".1" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-9-7h18v14H-9zM-5-3h10" fill="none" stroke="#37f5ae" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">PROJECTS</text>
+    <text y="76" text-anchor="middle" class="meta">SELECTED SYSTEMS</text>
+  </g>
+
+  <g transform="translate(240 570)">
+    <circle r="34" fill="#ffe26a" opacity=".08" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-9-8h18v16H-9zM-5-4h10M-5 1h6" fill="none" stroke="#ffe26a" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">SKILLS</text>
+    <text y="76" text-anchor="middle" class="meta">TECH STACK</text>
+  </g>
+
+  <g transform="translate(960 570)">
+    <circle r="34" fill="#35e7f5" opacity=".1" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-9 7h18M-6 2h12M-3-3h6" stroke="#35e7f5" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">EXPERIENCE</text>
+    <text y="76" text-anchor="middle" class="meta">WORK HISTORY</text>
+  </g>
+
+  <g transform="translate(600 665)">
+    <circle r="34" fill="#37f5ae" opacity=".1" filter="url(#softGlow)"/>
+    <circle r="25" class="node"/>
+    <path d="M-9-7h18v14H-9zM-5-3h10" fill="none" stroke="#37f5ae" stroke-width="2"/>
+    <text y="57" text-anchor="middle" class="label">CONTACT</text>
+    <text y="76" text-anchor="middle" class="meta">OPEN CHANNEL</text>
+  </g>
+
+  <g transform="translate(55 695)">
+    <circle cx="4" cy="-4" r="4" fill="#37f5ae"/>
+    <text x="16" class="tiny">LIVE CONNECTIONS</text>
+  </g>
+  <text x="1140" y="700" text-anchor="end" class="tiny">v0.1 / LIVING SYSTEM</text>
+</svg>
