@@ -18,7 +18,7 @@ export const experience = [
     date: 'September–December 2024',
     detail: 'South Jakarta',
     description:
-      'Studied Microsoft Dynamics 365 ERP workflows and how enterprise systems support business processes.',
+      'Explored Microsoft Dynamics 365 workflows and how ERP supports business processes.',
     technologies: ['Microsoft Dynamics 365', 'ERP workflows'],
   },
   {
@@ -29,7 +29,7 @@ export const experience = [
     date: 'June–October 2026',
     detail: 'Bootcamp',
     description:
-      'Studied React, Node.js, Express, and PostgreSQL, applying them in team and individual projects.',
+      'Applied React, Node.js, Express, and PostgreSQL in team and individual projects.',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
   },
 ]

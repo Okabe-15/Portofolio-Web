@@ -17,7 +17,7 @@ export default function HeroSection() {
       <p className="hero-prelude">Hello, I’m</p>
       <h1 id="hero-title">Ali Hadi<br />Cherid</h1>
       <p className="hero-role">Backend Developer</p>
-      <p className="hero-summary">I build reliable backend systems and web applications with a focus on clear architecture, maintainability, and solving real-world problems.</p>
+      <p className="hero-summary">I build backend APIs and web apps with Node.js, Express, and PostgreSQL, focusing on clear data models and maintainable code.</p>
 
       <div className="hero-actions flex flex-wrap items-center gap-3">
         <a className="button button-primary inline-flex items-center justify-center gap-2" href="#projects">Explore projects <ArrowDown size={15} aria-hidden="true" /></a>

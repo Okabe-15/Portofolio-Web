@@ -1,18 +1,14 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import LivingMap from './components/architecture/LivingMap'
 import ProjectSection from './components/ProjectSection'
 import ToolkitSection from './components/ToolkitSection'
 import AboutSection from './components/AboutSection'
-import SystemMetricsSection from './components/SystemMetricsSection'
 import ExperienceSection from './components/ExperienceSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
 export default function App() {
-  const [selectedProjectId, setSelectedProjectId] = useState('toko')
-
   return (
     <>
       <a className="skip-link" href="#main-content">Skip to content</a>
@@ -23,13 +19,12 @@ export default function App() {
           <LivingMap />
         </div>
 
-        <ProjectSection selectedProjectId={selectedProjectId} onSelectProject={setSelectedProjectId} />
-        <ToolkitSection selectedProjectId={selectedProjectId} />
+        <ProjectSection />
+        <ToolkitSection />
 
         <div className="information-grid shell">
           <AboutSection />
           <ExperienceSection />
-          <SystemMetricsSection />
         </div>
 
         <ContactSection />

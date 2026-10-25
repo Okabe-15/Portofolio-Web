@@ -22,9 +22,9 @@ export const portfolio = {
 }
 
 export const navigation = [
+  { id: 'about', label: 'About' },
   { id: 'projects', label: 'Projects' },
   { id: 'toolkit', label: 'Skills' },
-  { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' },
 ]

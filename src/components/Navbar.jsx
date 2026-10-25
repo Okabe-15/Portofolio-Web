@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className="site-header__inner shell flex h-full items-center justify-between gap-4">
         <a className="brand-lockup flex min-w-0 items-center gap-3" href="#top" onClick={closeMenu} aria-label={`${portfolio.name}, back to top`}>
           <span className="brand-mark grid shrink-0 place-items-center" aria-hidden="true"><Network size={17} strokeWidth={1.8} /></span>
-          <span className="brand-copy"><strong>Portfolio Network</strong><small>Living System Architecture</small></span>
+          <span className="brand-copy"><strong>{portfolio.name}</strong><small>{portfolio.role}</small></span>
         </a>
 
         <nav className="main-nav hidden items-center gap-5 lg:flex" aria-label="Main navigation">
