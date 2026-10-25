@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="82" y1="45" x2="1118" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2330" />
+      <stop offset="1" stop-color="#061018" />
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#4BCDEA" stroke-opacity=".09" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" rx="26" fill="url(#bg)" />
+  <rect width="1200" height="630" rx="26" fill="url(#grid)" />
+  <circle cx="882" cy="316" r="184" stroke="#35E7F5" stroke-opacity=".18" />
+  <circle cx="882" cy="316" r="132" stroke="#35E7F5" stroke-opacity=".35" stroke-dasharray="5 10" />
+  <path d="M882 316 742 222m140 94 155-94m-155 94 8 166" stroke="#35E7F5" stroke-opacity=".8" stroke-width="2" />
+  <circle cx="882" cy="316" r="48" fill="#0B2330" stroke="#A4FFCF" stroke-width="2" />
+  <circle cx="742" cy="222" r="12" fill="#35E7F5" />
+  <circle cx="1037" cy="222" r="12" fill="#FFE26A" />
+  <circle cx="890" cy="482" r="12" fill="#338CFF" />
+  <text x="92" y="112" fill="#A4FFCF" font-family="monospace" font-size="18" letter-spacing="4">BACKEND DEVELOPER / SYSTEM THINKER</text>
+  <text x="88" y="266" fill="#F4FBFF" font-family="Arial, sans-serif" font-size="72" font-weight="700">Ali Hadi Cherid</text>
+  <text x="92" y="334" fill="#35E7F5" font-family="Arial, sans-serif" font-size="34" font-weight="600">Backend Developer</text>
+  <text x="92" y="410" fill="#96B6C7" font-family="monospace" font-size="20">APIs  •  Databases  •  Scalable Systems</text>
+  <path d="M92 480h112" stroke="#35E7F5" stroke-width="3" />
+  <text x="92" y="530" fill="#96B6C7" font-family="monospace" font-size="15" letter-spacing="2">NODE.JS · POSTGRESQL · WEBSOCKET</text>
+</svg>
