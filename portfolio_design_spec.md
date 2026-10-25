@@ -866,7 +866,7 @@ Personal / Academic Projects
 Software Development Projects
 
 2024 — 2025
-Computer Science Student
+Informatics Graduate
 ```
 
 Each item:

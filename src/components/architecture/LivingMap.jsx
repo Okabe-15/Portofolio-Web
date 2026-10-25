@@ -7,7 +7,7 @@ import LivingMapNode from './LivingMapNode'
 
 const nodeTypes = { livingMap: LivingMapNode }
 const nodes = [
-  { id: 'developer', type: 'livingMap', position: { x: 270, y: 205 }, data: { label: 'Ali Hadi', meta: 'Backend Developer', description: 'Back to the top of Ali Hadi Cherid’s portfolio.' } },
+  { id: 'developer', type: 'livingMap', position: { x: 270, y: 205 }, data: { label: 'Ali Hadi', meta: 'Full-Stack Developer', description: 'Back to the top of Ali Hadi Cherid’s portfolio.' } },
   { id: 'about', type: 'livingMap', position: { x: 300, y: 28 }, data: { label: 'About', description: 'Go to About.' } },
   { id: 'skills', type: 'livingMap', position: { x: 26, y: 214 }, data: { label: 'Skills', description: 'Go to Skills.' } },
   { id: 'projects', type: 'livingMap', position: { x: 510, y: 214 }, data: { label: 'Projects', description: 'Go to Projects.' } },

@@ -1,10 +1,10 @@
 export const portfolio = {
   name: 'Ali Hadi Cherid',
   shortName: 'Ali Hadi',
-  role: 'Backend Developer',
+  role: 'Full-Stack Developer',
   headline: 'Building APIs, data flows, and useful products.',
   summary:
-    'Informatics Engineering graduate focused on backend development, relational data, and AI service integration.',
+    'Informatics graduate focused on backend development, relational data, and AI service integration.',
   location: 'Jakarta Selatan, Indonesia',
   availability: 'Open to backend opportunities',
   email: 'cheridalihadi@gmail.com',
@@ -14,7 +14,7 @@ export const portfolio = {
   linkedin: 'https://www.linkedin.com/in/alihadicherid',
   cv: '/cv/ali-hadi-cherid-cv.pdf',
   education: {
-    degree: 'Bachelor of Informatics Engineering',
+    degree: 'Bachelor of Informatics',
     institution: 'Universitas Mercu Buana',
     period: '2022–2026',
     gpa: '3.63 / 4.00',

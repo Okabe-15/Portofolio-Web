@@ -88,7 +88,7 @@ export const projects = [
     },
     stack: ['HTML', 'CSS', 'JavaScript', 'JSON', 'Fetch API'],
     github: 'https://github.com/Okabe-15/hackaton-fase0-badminto--62',
-    demo: null,
+    demo: 'https://badminton.issac.biz.id/',
     ai: false,
   },
   {

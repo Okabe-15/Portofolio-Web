@@ -2,7 +2,7 @@ export const experience = [
   {
     id: 'education',
     kind: 'Education',
-    title: 'Informatics Engineering graduate',
+    title: 'Informatics graduate',
     organization: 'Universitas Mercu Buana',
     date: '2022–2026',
     detail: 'Bachelor’s degree · GPA 3.63 / 4.00',

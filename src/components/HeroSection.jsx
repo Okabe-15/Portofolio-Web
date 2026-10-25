@@ -16,7 +16,7 @@ export default function HeroSection() {
       <p className="availability-line"><span className="status-dot" />{portfolio.availability}</p>
       <p className="hero-prelude">Hello, I’m</p>
       <h1 id="hero-title">Ali Hadi<br />Cherid</h1>
-      <p className="hero-role">Backend Developer</p>
+      <p className="hero-role">Full-Stack Developer</p>
       <p className="hero-summary">I build backend APIs and web apps with Node.js, Express, and PostgreSQL, focusing on clear data models and maintainable code.</p>
 
       <div className="hero-actions flex flex-wrap items-center gap-3">
