@@ -1,0 +1,5 @@
+import { Github, Linkedin, Mail, Phone } from 'lucide-react'
+
+export default function ContactSection() {
+  return <section className="contact shell" id="contact"><div className="contact-panel"><p className="eyebrow">07 / Contact</p><h2>Let’s build<br />something useful.</h2><p>Reach out to discuss a web application, full-stack role, or collaboration.</p><a className="button button-primary" href="mailto:cheridalihadi@gmail.com">Send an email <Mail size={15} /></a></div><div className="contact-aside"><span className="aside-label">CONTACT_ENDPOINT</span><a href="mailto:cheridalihadi@gmail.com"><Mail size={14} /> cheridalihadi@gmail.com</a><a href="tel:+6287882654885"><Phone size={14} /> +62 878-8265-4885</a><a href="https://www.linkedin.com/in/alihadicherid" target="_blank" rel="noreferrer"><Linkedin size={14} /> LinkedIn <span className="sr-only">(opens in new tab)</span></a><a href="https://github.com/Okabe-15" target="_blank" rel="noreferrer"><Github size={14} /> GitHub</a><span className="aside-status"><b /> Jakarta Selatan, Indonesia</span></div></section>
+}
