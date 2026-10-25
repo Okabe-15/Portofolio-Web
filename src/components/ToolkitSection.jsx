@@ -1,0 +1,4 @@
+export default function ToolkitSection() {
+  const tools = [['React.js', 'used in 3 listed projects'], ['Node.js / Express.js', 'used in 3 listed projects'], ['PostgreSQL / Sequelize', 'used in 3 listed projects'], ['AI service integration', 'featured in 3 projects'], ['Git / GitHub / Postman', 'versioning + API testing'], ['Python / Java / C++', 'additional programming languages'], ['Indonesian / English', 'communication languages']]
+  return <section className="toolkit shell" id="toolkit"><div><p className="eyebrow">03 / Working toolkit</p><h2>Tools for making<br /><em>good decisions.</em></h2></div><div className="tool-list">{tools.map(([tool, detail], index) => <div className="tool-row" key={tool}><span>0{index + 1}</span><strong>{tool}</strong><small>{detail}</small></div>)}</div></section>
+}
