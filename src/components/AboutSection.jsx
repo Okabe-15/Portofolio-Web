@@ -1,30 +1,23 @@
+import { GraduationCap, MapPin, Server } from 'lucide-react'
+import { portfolio } from '../data/portfolio'
 import SectionHeading from './SectionHeading'
 
-const principles = [
-  'Full-stack development',
-  'REST API integration',
-  'Relational databases',
-  'AI service integration',
-  'Testing and debugging',
-]
+const focusAreas = ['Backend workflows', 'Relational data', 'API integration']
 
 export default function AboutSection() {
   return (
-    <section className="about shell" id="about">
-      <SectionHeading
-        index="04"
-        eyebrow="About me"
-        title="Reliable systems,"
-        accent="built with purpose."
-      />
-      <div className="about-content">
-        <p>
-          I’m Ali Hadi Cherid, a final-year Informatics Engineering student at Universitas Mercu Buana and an aspiring Junior Full-Stack Developer. I build web applications with React, Node.js, Express, Sequelize, and PostgreSQL, and have integrated generative AI, speech-to-text, and text-to-speech services into learning and interview products.
-        </p>
-        <ul className="about-principles" aria-label="Working principles">
-          {principles.map((principle) => <li key={principle}>{principle}</li>)}
-        </ul>
+    <section id="about" className="about-section info-panel" aria-labelledby="about-title">
+      <SectionHeading id="about-title" eyebrow="Developer profile" title="Build the system behind the screen." />
+      <p className="about-copy">I’m {portfolio.name}, an Informatics Engineering graduate from Universitas Mercu Buana. I work across backend and full-stack projects, connecting APIs, databases, and user workflows into applications people can use.</p>
+      <p className="about-copy about-copy--secondary">My project work includes marketplaces, booking flows, interview practice, learning tools, and real-time auction interfaces. I’m focused on a backend developer role where I can keep building reliable services and clearer data flows.</p>
+      <ul className="about-focus-list" aria-label="Development focus">
+        {focusAreas.map((area) => <li key={area}>{area}</li>)}
+      </ul>
+      <div className="about-education">
+        <span className="about-education__icon"><GraduationCap size={18} aria-hidden="true" /></span>
+        <span><strong>{portfolio.education.degree}</strong><small>{portfolio.education.institution} · {portfolio.education.period}</small></span>
       </div>
+      <p className="about-location"><MapPin size={14} aria-hidden="true" />{portfolio.location}<span aria-hidden="true">·</span><Server size={14} aria-hidden="true" />Backend-focused</p>
     </section>
   )
 }

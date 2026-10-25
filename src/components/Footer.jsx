@@ -1,5 +1,16 @@
-import { Github, Linkedin, Mail, Zap } from 'lucide-react'
+import { Github, Linkedin, Network } from 'lucide-react'
+import { portfolio } from '../data/portfolio'
 
 export default function Footer() {
-  return <footer className="site-footer shell"><span>© 2026 Ali Hadi Cherid · Portfolio Network</span><nav className="footer-links" aria-label="Footer links"><a href="https://github.com/Okabe-15" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={14} /> GitHub</a><a href="https://www.linkedin.com/in/alihadicherid" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={14} /> LinkedIn</a><a href="mailto:cheridalihadi@gmail.com" aria-label="Email Ali Hadi Cherid"><Mail size={14} /> Email</a></nav><span>Living System Architecture <Zap size={12} /></span></footer>
+  return (
+    <footer className="site-footer shell">
+      <a className="footer-brand" href="#top"><Network size={16} aria-hidden="true" />Portfolio Network</a>
+      <p>Built by {portfolio.name} · Living System Architecture</p>
+      <nav className="footer-links" aria-label="Footer social links">
+        <a href={portfolio.github} target="_blank" rel="noreferrer" aria-label="GitHub (opens in a new tab)"><Github size={16} /></a>
+        <a href={portfolio.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn (opens in a new tab)"><Linkedin size={16} /></a>
+        <a href={`mailto:${portfolio.email}`} aria-label="Send email"><span>@</span></a>
+      </nav>
+    </footer>
+  )
 }

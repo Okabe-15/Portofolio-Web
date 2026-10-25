@@ -1,29 +1,27 @@
+import { Github, Layers3, Sparkles } from 'lucide-react'
+import { projects } from '../data/projects'
 import SectionHeading from './SectionHeading'
 
 const metrics = [
-  ['06', 'Portfolio projects', 'Full-stack, AI, marketplace, booking, and learning apps'],
-  ['20+', 'Technologies & tools', 'Web development, databases, testing, and AI integration'],
-  ['03', 'AI-enabled projects', 'Interview practice, English learning, and auction assistance'],
+  { value: projects.length, label: 'Projects documented', detail: 'Across team, pair, and individual work', icon: Layers3 },
+  { value: projects.filter((project) => project.github).length, label: 'Projects with source links', detail: 'Repository links are listed with each case file', icon: Github },
+  { value: projects.filter((project) => project.ai).length, label: 'Projects with AI services', detail: 'Interview, learning, and auction projects', icon: Sparkles },
 ]
 
 export default function SystemMetricsSection() {
   return (
-    <section className="system-metrics shell" id="metrics">
-      <SectionHeading
-        index="05"
-        eyebrow="System metrics"
-        title="A focused"
-        accent="engineering toolkit."
-      />
-      <dl className="metrics-grid">
-        {metrics.map(([value, label, detail]) => (
-          <div className="metric-card" key={label}>
-            <dt>{label}</dt>
+    <section id="metrics" className="metrics-section info-panel" aria-labelledby="metrics-title">
+      <SectionHeading id="metrics-title" eyebrow="Work evidence" title="A small system, clearly mapped." />
+      <dl className="metrics-list">
+        {metrics.map(({ value, label, detail, icon: Icon }) => (
+          <div className="metric-line" key={label}>
+            <dt><Icon size={15} aria-hidden="true" /><span>{label}</span></dt>
             <dd>{value}</dd>
             <p>{detail}</p>
           </div>
         ))}
       </dl>
+      <p className="metric-source-note">Counts are derived from the project records shown on this page.</p>
     </section>
   )
 }

@@ -1,11 +1,12 @@
-export default function SectionHeading({ index, eyebrow, title, accent, action }) {
+export default function SectionHeading({ id, eyebrow, title, description, action, className = '' }) {
   return (
-    <div className="section-heading">
-      <div>
-        <p className="eyebrow">{index} / {eyebrow}</p>
-        <h2>{title}<br /><em>{accent}</em></h2>
+    <div className={`section-heading ${className}`.trim()}>
+      <div className="section-heading__copy">
+        {eyebrow && <p className="section-kicker">{eyebrow}</p>}
+        <h2 id={id}>{title}</h2>
+        {description && <p className="section-description">{description}</p>}
       </div>
-      {action && <div>{action}</div>}
+      {action && <div className="section-heading__action">{action}</div>}
     </div>
   )
 }

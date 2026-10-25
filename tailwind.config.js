@@ -4,17 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#10252a',
-        paper: '#eef2e7',
-        mint: '#b8efca',
-        lime: '#d6f04d',
-        orange: '#ff704a',
-        signal: '#4e7dff',
+        ink: '#F4FBFF',
+        paper: '#040B11',
+        panel: '#061018',
+        surface: '#0C202A',
+        cyan: '#35E7F5',
+        emerald: '#37F5AE',
+        muted: '#93B3C2',
+        signal: '#338CFF',
       },
       fontFamily: {
         display: ['Space Grotesk', 'sans-serif'],
         body: ['DM Sans', 'sans-serif'],
-        mono: ['Space Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
     },
   },

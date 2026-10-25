@@ -14,6 +14,7 @@ coverage/
 .agents/
 .codex/
 graphify-out/
+.venv
 
 # Logs and temporary files
 *.log

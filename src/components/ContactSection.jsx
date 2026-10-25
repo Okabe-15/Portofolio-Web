@@ -1,5 +1,23 @@
-import { Github, Linkedin, Mail, Phone } from 'lucide-react'
+import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
+import { portfolio } from '../data/portfolio'
+import SectionHeading from './SectionHeading'
 
 export default function ContactSection() {
-  return <section className="contact shell" id="contact"><div className="contact-panel"><p className="eyebrow">07 / Contact</p><h2>Let’s build<br />something useful.</h2><p>Reach out to discuss a web application, full-stack role, or collaboration.</p><a className="button button-primary" href="mailto:cheridalihadi@gmail.com">Send an email <Mail size={15} /></a></div><div className="contact-aside"><span className="aside-label">CONTACT_ENDPOINT</span><a href="mailto:cheridalihadi@gmail.com"><Mail size={14} /> cheridalihadi@gmail.com</a><a href="tel:+6287882654885"><Phone size={14} /> +62 878-8265-4885</a><a href="https://www.linkedin.com/in/alihadicherid" target="_blank" rel="noreferrer"><Linkedin size={14} /> LinkedIn <span className="sr-only">(opens in new tab)</span></a><a href="https://github.com/Okabe-15" target="_blank" rel="noreferrer"><Github size={14} /> GitHub</a><span className="aside-status"><b /> Jakarta Selatan, Indonesia</span></div></section>
+  return (
+    <section id="contact" className="contact-section shell" aria-labelledby="contact-title">
+      <div className="contact-copy">
+        <SectionHeading id="contact-title" eyebrow="Contact" title="Let’s build something useful." />
+        <p>Open to backend developer opportunities and thoughtful product collaborations. Reach out by email or connect through a professional profile.</p>
+        <a className="button button-primary inline-flex items-center justify-center gap-2" href={`mailto:${portfolio.email}`}>Start a conversation <Mail size={15} aria-hidden="true" /></a>
+      </div>
+      <address className="contact-endpoints">
+        <span className="contact-endpoints__label">Contact channels</span>
+        <a href={`mailto:${portfolio.email}`}><Mail size={16} aria-hidden="true" /><span>{portfolio.email}</span><ArrowUpRight size={13} aria-hidden="true" /></a>
+        <a href={portfolio.phoneHref}><Phone size={16} aria-hidden="true" /><span>{portfolio.phone}</span><ArrowUpRight size={13} aria-hidden="true" /></a>
+        <a href={portfolio.linkedin} target="_blank" rel="noreferrer"><Linkedin size={16} aria-hidden="true" /><span>LinkedIn</span><ArrowUpRight size={13} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span></a>
+        <a href={portfolio.github} target="_blank" rel="noreferrer"><Github size={16} aria-hidden="true" /><span>GitHub</span><ArrowUpRight size={13} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span></a>
+        <p><MapPin size={14} aria-hidden="true" />{portfolio.location}</p>
+      </address>
+    </section>
+  )
 }
