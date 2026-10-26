@@ -2,7 +2,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import ProjectCaseStudy from './ProjectCaseStudy'
 
-export default function ProjectAccordionItem({ project, index, isFeatured, isOpen, onToggle }) {
+export default function ProjectAccordionItem({ project, index, isOpen, onToggle }) {
   const reduceMotion = useReducedMotion()
   const triggerId = `project-${project.id}-trigger`
   const panelId = `project-${project.id}-panel`
@@ -24,7 +24,6 @@ export default function ProjectAccordionItem({ project, index, isFeatured, isOpe
         <span className="project-accordion-trigger__identity">
           <span className="project-accordion-trigger__title-line">
             <strong>{project.name}</strong>
-            {isFeatured && <span className="project-featured-label">Featured</span>}
           </span>
           <span className="project-accordion-trigger__category">{project.category}</span>
         </span>

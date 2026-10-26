@@ -1,16 +1,15 @@
 import { ArrowUpRight } from 'lucide-react'
 import { useState } from 'react'
-import { featuredProjectIds, projects } from '../data/projects'
+import { projectOrderIds, projects } from '../data/projects'
 import ProjectAccordionItem from './projects/ProjectAccordionItem'
 import SectionHeading from './SectionHeading'
 
-const orderedProjects = [
-  ...featuredProjectIds.map((id) => projects.find((project) => project.id === id)).filter(Boolean),
-  ...projects.filter((project) => !featuredProjectIds.includes(project.id)),
-]
+const orderedProjects = projectOrderIds
+  .map((id) => projects.find((project) => project.id === id))
+  .filter(Boolean)
 
 export default function ProjectSection() {
-  const [openProjectId, setOpenProjectId] = useState(orderedProjects[0]?.id ?? null)
+  const [openProjectId, setOpenProjectId] = useState(null)
 
   function toggleProject(projectId) {
     const nextProjectId = openProjectId === projectId ? null : projectId
@@ -33,7 +32,6 @@ export default function ProjectSection() {
             key={project.id}
             project={project}
             index={index}
-            isFeatured={project.id === featuredProjectIds[0]}
             isOpen={openProjectId === project.id}
             onToggle={() => toggleProject(project.id)}
           />

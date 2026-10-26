@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Github } from 'lucide-react'
+import { ArrowUpRight, Github } from 'lucide-react'
 import ProjectArchitecture from '../architecture/ProjectArchitecture'
 
 export default function ProjectCaseStudy({ project }) {
@@ -31,9 +31,6 @@ export default function ProjectCaseStudy({ project }) {
           <p>{project.stack.join(' · ')}</p>
         </div>
         <nav className="project-project-actions" aria-label={`${project.name} links`}>
-          <a className="project-action-primary" href={`#project-${project.id}-details`}>
-            View Case Study <ArrowDown size={15} aria-hidden="true" />
-          </a>
           {project.demo && <a className="project-action-secondary" href={project.demo} target="_blank" rel="noreferrer">Live Demo <ArrowUpRight size={14} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span></a>}
           {project.github && <a className="project-action-source" href={project.github} target="_blank" rel="noreferrer"><Github size={15} aria-hidden="true" /> Source <span className="sr-only"> (opens in a new tab)</span></a>}
         </nav>

@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { ArrowDown, Download, Github, Linkedin } from 'lucide-react'
+import { ArrowDown, Github, Linkedin } from 'lucide-react'
 import { portfolio } from '../data/portfolio'
 
 export default function HeroSection() {
@@ -21,7 +21,6 @@ export default function HeroSection() {
 
       <div className="hero-actions flex flex-wrap items-center gap-3">
         <a className="button button-primary inline-flex items-center justify-center gap-2" href="#projects">Explore projects <ArrowDown size={15} aria-hidden="true" /></a>
-        <a className="button button-secondary inline-flex items-center justify-center gap-2" href={portfolio.cv} download>Download CV <Download size={15} aria-hidden="true" /></a>
       </div>
 
       <div className="hero-links flex items-center gap-2" aria-label="Professional profiles">

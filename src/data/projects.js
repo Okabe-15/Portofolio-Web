@@ -186,3 +186,4 @@ export const projects = [
 ]
 
 export const featuredProjectIds = ['toko', 'smart-hammer', 'intervue']
+export const projectOrderIds = ['badminton', 'toko', 'homestay', 'smart-hammer', 'intervue', 'comic']
